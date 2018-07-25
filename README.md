@@ -20,3 +20,5 @@ Here it is markup for e-mail templates for projects aira.life and robonomics.net
 Актуальными считаются шаблоны со следующими именами: `template-email-`, `system-email-`. Актуальность всех остальных шаблонов при желании использовать необходимо уточнять.
 
 Итак, где тестировались актуальные шаблоны: Mail.ru, Google.com (web версия и мобильный клиент), Yandex.ru, Apple Почта Версия 11.3
+
+О любых ошибках в коде сообщайте владельцу репозитория лично или в Issues репо.
