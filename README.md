@@ -22,5 +22,5 @@ Here it is markup for e-mail templates for projects aira.life and robonomics.net
 Итак, где тестировались актуальные шаблоны: Mail.ru, Google.com (web версия и мобильный клиент), Yandex.ru, Apple Почта Версия 11.3
 
 О любых ошибках в коде сообщайте владельцу репозитория лично или в Issues репо.
-## Другие ссылки
+## Другие рекомендации
 [Рекомендации по загрузке сверстанных писем в Unisender](https://docs.google.com/document/d/15cmNt5l1WRy2l_7bVpt-Hmtgv6uCu33Dzx49S82w69g) – приватный Google-документ, нужно запросить доступ и указать в комментарии обоснование
