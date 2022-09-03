@@ -57,8 +57,36 @@
 
     @media(max-width: 480px) {
       .table-600 {
-        width: 480px !important;
+        width: 320px !important;
       }
+
+      .banner-td img{
+        width: 400px !important;
+      }
+
+      .text {
+        font-size: 20px !important;
+        line-height: 22px;
+      }
+
+      .logo img {
+        vertical-align: top;
+        width: 25px !important;
+        height: 22px !important;
+      }
+
+      .logo-discord {
+        padding-top: 0 !important;
+        padding-bottom: 8px !important; 
+      }
+    }
+
+
+    @media(max-width: 330px) {
+      .table-600 {
+        width: 280px !important;
+      }
+
     }
 
 	</style>
@@ -74,18 +102,18 @@
           <td class="logo" align="center" style="padding-bottom: 20px; padding-top: 20px;" bgcolor="#162128">
             <a style="text-decoration: none; font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, noto, arial, sans-serif;font-size:18px; text-transform: uppercase;" href="https://wiki.robonomics.network/" target="_blank">
               <img style=" display: inline; width: 30px; margin-right: 20px;" src="./files/robonomics-logo-sign-sm.png" alt="logo" />
-              <h2 style="display: inline; margin: 0; color: #ffffff;">Robonomics Wiki</h2>
+              <h2 class="text" style="display: inline; margin: 0; color: #ffffff;">Robonomics Wiki</h2>
             </a>
           </td>
         </tr>
         <tr>
           <td class="banner-td" style="padding-bottom: 20px;">
-            <img src="./files/robonomics-lab.png" alt="banner" width="600" height="400" />
+            <img src="./files/robonomics-lab.png" alt="banner" width="600" />
           </td>
         </tr>
         <tr>
           <td  align="center" style="padding-bottom: 20px;">
-            <h2 style="font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, noto, arial, sans-serif; font-size: 30px; font-weight: bold;">Thanks for your feedback!</h2>
+            <h2 class="text" style="font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, noto, arial, sans-serif; font-size: 30px; font-weight: bold;">Thanks for your feedback!</h2>
           </td>
         </tr>
         </table>
@@ -95,7 +123,7 @@
       <td align="center" class="footer-td">
         <table align="center" class="main table-600" cellpadding="0" cellspacing="0" width="600">
           <tr>
-            <td class="logo" align="center" style="padding-bottom: 20px; padding-top: 20px;" bgcolor="#5865F2">
+            <td class="logo-discord" align="center" style="padding-bottom: 20px; padding-top: 20px;" bgcolor="#5865F2">
               <a style="padding-bottom: 20px; text-decoration: none; font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, noto, arial, sans-serif;font-size:18px;" href="https://discord.gg/JpaN2XAmqY" target="_blank">
                 <p style=" font-size: 14px; color: #ffffff; font-weight: bold;">Also you may share your thoughts <br> with Robonomics community <br>in</p>
                 <img style="margin-bottom: 10px;" width="160px" src="./files/discord.png" alt="discord logo">
