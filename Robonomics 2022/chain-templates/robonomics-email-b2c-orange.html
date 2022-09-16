@@ -1,0 +1,329 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="supported-color-schemes" content="light dark" />
+  <meta name="color-scheme" content="light dark" />
+
+	<style type="text/css">
+    /* + MAIN LAYOUT */
+    body, html { font-size: 100%; }
+
+    body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+    .font {
+      font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, noto, arial, sans-serif !important;
+      font-size: 19px !important;
+      font-size: 1.2rem !important;
+      line-height: 1.5;
+    }
+
+    img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100% !important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+
+    table td {
+			border-collapse: collapse;
+		}
+    
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+      table-layout: fixed;
+      text-align: justify;
+		}
+
+    .visually-hidden {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+
+    .container {
+      width: 600px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .padding, .table-text td, .padding-x2 {
+      padding: 30px 20px;
+    }
+
+    .padding-x2 {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .table-wide {
+      width: 100%
+    }
+
+    .description {
+      font-style: italic;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .description a {
+      font-weight: bold;
+    }
+
+    .description p {
+      margin: 0 !important
+    }
+
+    .text-small {
+      font-size: 15px !important;
+      font-size: 0.9rem !important;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.2;
+      text-align: left !important;
+    }
+
+    .title {
+      font-size: 40px !important;
+      font-size: 2.5rem !important;
+      line-height: 1.3;
+      text-align: left;
+    }
+    /* - MAIN LAYOUT */
+
+
+    /* + COLORING */
+    .gmail-blend-screen { background:#000; mix-blend-mode:screen; }
+    .gmail-blend-difference { background:#000; mix-blend-mode:difference; }
+
+    .bg-white,
+    .bg-white .description a { color: #000000; }
+
+    .bg-orange,
+    .bg-green,
+    .bg-violet,
+    .bg-crimson,
+    .bg-carbon,
+    .bg-sea,
+    .bg-orange .description a,
+    .bg-green .description a,
+    .bg-violet .description a,
+    .bg-crimson .description a,
+    .bg-carbon .description a,
+    .bg-sea .description a { color: #ffffff; }
+
+    .bg-white {
+      background: #ffffff;
+      /* background-image: linear-gradient(#ffffff,#ffffff); */
+    }
+
+    .bg-orange {
+      background: #DB8700;
+      background-image: linear-gradient(#DB8700,#DB8700);
+    }
+    .bg-banner.bg-orange { background-image: url('http://static.robonomics.network/email/robonomics-network-bg.png'), linear-gradient(#DB8700,#DB8700); }
+
+    .bg-green {
+      background: #98AC00;
+      background-image: linear-gradient(#98AC00,#98AC00);
+    }
+    .bg-banner.bg-green { background-image: url('http://static.robonomics.network/email/robonomics-network-bg.png'), linear-gradient(#98AC00,#98AC00); }
+
+    .bg-violet {
+      background: #4F00AC;
+      background-image: linear-gradient(#4F00AC,#4F00AC);
+    }
+    .bg-banner.bg-violet { background-image: url('http://static.robonomics.network/email/robonomics-network-bg.png'), linear-gradient(#4F00AC,#4F00AC); }
+
+    .bg-crimson {
+      background: #C7126D;
+      background-image: linear-gradient(#C7126D,#C7126D);
+    }
+    .bg-banner.bg-crimson { background-image: url('http://static.robonomics.network/email/robonomics-network-bg.png'), linear-gradient(#C7126D,#C7126D); }
+
+    .bg-carbon {
+      background: #434343;
+      background-image: linear-gradient(#434343,#434343);
+    }
+    .bg-banner.bg-carbon { background-image: url('http://static.robonomics.network/email/robonomics-network-bg.png'), linear-gradient(#434343,#434343); }
+
+    .bg-sea {
+      background: #006460;
+      background-image: linear-gradient(#006460,#006460);
+    }
+    .bg-banner.bg-sea { background-image: url('http://static.robonomics.network/email/robonomics-network-bg.png'), linear-gradient(#006460,#006460); }
+    
+    .bg-banner {
+      background-image: url('http://static.robonomics.network/email/robonomics-network-bg.png');
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      min-height: 400px;
+      padding-bottom: 80px;
+    }
+
+    .text-gray, .text-gray a {
+      color: #A8A8A8
+    }
+
+    .table-td-line {
+      border-bottom: 1px solid #000000;
+    }
+
+
+    @media (prefers-color-scheme: dark){
+      .bg-white,
+      .bg-white .description a { color: #ffffff; }
+
+      .table-td-line {
+        border-color: #ffffff;
+      }
+    }
+    /* - COLORING */
+
+	</style>
+</head>
+
+<body class="body">
+
+  <div class="visually-hidden" style="font-size:0px; color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Robonomics network news!</div>
+
+  <table style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>
+          <div class="font bg-white">
+            <div class="bg-orange bg-banner">
+              <div class="container">
+                <div class="padding">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a href="https://robonomics.network/" style="display: block; text-decoration: none; font-size:14px; text-transform: uppercase;" target="_blank"><img alt="Logo" src="http://static.robonomics.network/email/robonomics-network-logo.png" style="width: 30px; margin-right: 10px;" /></a>
+                        </td>
+                        <td>
+                          <div class="gmail-blend-screen">
+                            <div class="gmail-blend-difference">
+                              <a href="https://robonomics.network/" style="display: block; text-decoration: none; font-size:14px; text-transform: uppercase;" target="_blank"><span class="text" style="display: inline-block; vertical-align: top; padding-top: 7px; color: #ffffff;">Robonomics network</span></a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+        
+              <div class="gmail-blend-screen">
+                <div class="gmail-blend-difference">
+                  <div class="container">
+                    <div class="padding">
+                      <h1 class="title">Title</h1>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="padding">
+                      <div class="description">
+                        Good day friend!<br />
+                        Have you heard of Boston Dynamics Spot? I&rsquo;m sure <a href="https://robonomics.network/" target="_blank">you did</a> :) Would you like to control it remotely, 
+                        testing out yourself and have the video of how you use Spot?
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="container">
+              <table align="center" cellpadding="0" cellspacing="0" class="table-wide table-text description font">
+                <tbody>
+                  <tr>
+                    <td align="left"></td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      I&rsquo;m sure you did:) Would you like to control it remotely, <a href="https://robonomics.network/" target="_blank">testing out yourself</a> and have the video of how you use Spot?
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      We prepared a remote lab for you to experiment with it, and are willing to give you a chance to test it. It&rsquo;s completely free and here&rsquo;s the link for you to play with the Spot.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      Hope you&rsquo;ll love the experience!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      Sincerely,<br />Michael from Robonomics
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="table-td-line"></td>
+                  </tr>
+                </tbody>
+              </table>
+        
+              <div class="container">
+                <div class="padding-x2">
+                  <table align="left" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td align="center">
+                          <a href="https://discord.gg/JpaN2XAmqY" style="display: inline-block; margin-right: 30px; width: 50px;" target="_blank">
+                            <img alt="discord" src="http://static.robonomics.network/email/discord-black-b.png" />
+                          </a>
+                        </td>
+                        <td align="center">
+                          <a href="https://twitter.com/AIRA_Robonomics" style="display: inline-block; margin-right: 30px; width: 50px;" target="_blank">
+                            <img alt="twitter" src="http://static.robonomics.network/email/twitter-black-b.png" />
+                          </a>
+                        </td>
+                        <td align="center">
+                          <a href="https://calendly.com/vitl2907" style="display: inline-block; width: 50px;" target="_blank">
+                            <img alt="calendly" src="http://static.robonomics.network/email/calendly-black-b.png" />
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+        
+              <div class="padding text-gray text-small">
+                <a href="https://robonomics.network" style="color: #A8A8A8" target="_blank">Copyright &copy; 2022 Robonomics, All rights decentralized.</a> <br/><br/>
+                You may <a href="{{UnsubscribeUrl}}" style="color: #A8A8A8" target="_self">unsubscribe</a> from email list
+              </div>
+        
+            </div>
+        
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+
+</body>
+</html>
