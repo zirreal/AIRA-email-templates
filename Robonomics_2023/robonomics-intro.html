@@ -17,7 +17,7 @@
   }
 
   .description,
-.description-text {
+  .description-text {
     font-size: 15px !important;
   }
 
@@ -28,8 +28,10 @@
     padding-bottom: 30px !important;
   }
 
-  .square-logo {
-    padding-right: 2px !important;
+  @media (max-width: 370px) {
+    .square-logo img {
+      padding-top: 24px !important; 
+    }
   }
 }
 </style>
@@ -41,23 +43,24 @@
     <tr>
       <td style="border-collapse: collapse; padding-bottom: 30px;">
         <table align="justify" class="main table-600" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; text-align: justify; width: 100%; max-width: 600px; margin: 0 auto;">
-          <tr>
-            <td class="square-logo" width="86px" style="border-collapse: collapse; padding-right: 10px;">
-              <a href="https://robonomics.network" target="_blank">
-                <img src="https://static.robonomics.network/email/regular-new-logo/robonomics-logo-square.png" alt="logo" style="outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; display: block; max-width: 100%;">
+          <tr style="padding-right: 20px">
+            <td width="86px"  height="83px"  class="square-logo" style="border-collapse: collapse; padding-right: 10px;">
+              <a  style="background-color: #214FDA; display: block; height: 100%; text-align: center;" href="https://robonomics.network" target="_blank">
+                <img src="https://static.robonomics.network/email/regular-new-logo/robonomics-logo-white.png" alt="logo" style="outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; padding: 0; margin: auto;
+                display: block;  max-width: 100%; width: 55px;     padding-top: 15px; ">
               </a>
             </td>
-            <td width="16px" align="center" style="border-collapse: collapse;">
-              <div class="decor-img" style="width: 16px; margin: 0 auto; vertical-align:middle;">
+            <td width="16px" align="center" style="border-collapse: collapse; padding-right: 10px;">
+              <div class="decor-img" style="width: 16px; margin: 0 auto; vertical-align:middle; ">
                 <img src="https://static.robonomics.network/email/regular-new-logo/heart.png" alt="" aria-hidden="true" style="outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; display: block; max-width: 100%;">
               </div>
             </td>
             <td style="border-collapse: collapse;">
-              <div class="banner" style="max-width: 430px; width: 100%;">
-                <div class="line black-line" style="margin: 0 auto; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; max-width: 385px; font-size: 20px; text-align: left; text-transform: uppercase; color: #fff; background-color: #000; font-family: Roboto Mono, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, noto, arial, sans-serif;">
+              <div class="banner" style="width: 100%;">
+                <div class="line black-line" style="margin: 0 auto; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 10px; font-size: 20px; text-align: left; text-transform: uppercase; color: #fff; background-color: #000; font-family: Roboto Mono, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, noto, arial, sans-serif;">
                   Robonomics network 
                 </div>
-                <div class="line white-line" style="margin: 0 auto; padding-top: 10px; padding-left: 20px; max-width: 385px; text-align: left; text-transform: uppercase; padding-bottom: 20px; font-size: 16px; background-color: #D9D9D9; font-family: Roboto Mono, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, noto, arial, sans-serif;">
+                <div class="line white-line" style="margin: 0 auto; padding-top: 10px; padding-left: 20px; text-align: left; text-transform: uppercase; padding-bottom: 20px; font-size: 16px; background-color: #D9D9D9; font-family: Roboto Mono, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, noto, arial, sans-serif;">
                  quick intro
                 </div>
               </div>
@@ -90,8 +93,8 @@
       <td align="center" style="border-collapse: collapse;">
         <table align="justify" class="main table-600" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; text-align: justify; width: 100%; max-width: 600px; margin: 0 auto;">
           <tr>
-            <td class="description text-line" align="center" bgcolor="#FFFFFF" style="border-collapse: collapse; font-size: 16px; font-weight: 500; line-height: 28px; text-align: center; word-wrap: break-word; overflow-wrap: break-word; padding-top: 30px;">
-              <div> A quick summary about the project: Robonomics is an open-source protocol that finds application across a range of real-world scenarios, spanning from the integration of small robotics and smart devices to the establishment of scalable cyber-physical systems. Watch out R&Ds and implemented live projects on <a style="color: #214FDA; text-decoration: none;" href="https://robonomics.network/cases/" target="_blank"> https://robonomics.network/cases/ </a></div>
+            <td class="description text-line" align="center" bgcolor="#FFFFFF" style="border-collapse: collapse; font-size: 16px; font-weight: 400; line-height: 30px; text-align: center; word-wrap: break-word; overflow-wrap: break-word; padding-top: 30px;">
+              <div> <b>A quick summary about the project:</b> Robonomics is an open-source protocol that finds application across a range of real-world scenarios, spanning from the integration of small robotics and smart devices to the establishment of scalable cyber-physical systems. Watch out R&Ds and implemented live projects on <a style="color: #214FDA; text-decoration: none;" href="https://robonomics.network/cases/" target="_blank"> https://robonomics.network/cases/ </a></div>
             </td>
           </tr>
           <tr>
@@ -102,8 +105,8 @@
             </td>
           </tr>
           <tr>
-            <td class="description text-line" align="center" bgcolor="#FFFFFF" style="border-collapse: collapse; font-size: 16px; font-weight: 500; line-height: 28px; text-align: center; word-wrap: break-word; overflow-wrap: break-word; padding-top: 30px;">
-              <div> For science enthusiasts, we have compiled scientific papers featuring research on Robonomics <a style="color: #214FDA; text-decoration: none;" href="https://robonomics.network/papers/" target="_blank"> https://robonomics.network/papers/ </a></div>
+            <td class="description text-line" align="center" bgcolor="#FFFFFF" style="border-collapse: collapse; font-size: 16px; font-weight: 400; line-height: 30px; text-align: center; word-wrap: break-word; overflow-wrap: break-word; padding-top: 30px;">
+              <div> <b>For science enthusiasts,</b> we have compiled scientific papers featuring research on Robonomics <a style="color: #214FDA; text-decoration: none;" href="https://robonomics.network/papers/" target="_blank"> https://robonomics.network/papers/ </a></div>
             </td>
           </tr>
           <tr>
@@ -114,8 +117,8 @@
             </td>
           </tr>
           <tr>
-            <td class="description text-line" align="center" bgcolor="#FFFFFF" style="border-collapse: collapse; font-size: 16px; font-weight: 500; line-height: 28px; text-align: center; word-wrap: break-word; overflow-wrap: break-word; padding-top: 30px;">
-              <div> For crypto enthusiasts, take a look at <a style="color: #214FDA; text-decoration: none;" href="https://robonomics.network/xrt/" target="_blank"> https://robonomics.network/xrt/  </a></div>
+            <td class="description text-line" align="center" bgcolor="#FFFFFF" style="border-collapse: collapse; font-size: 16px; font-weight: 400; line-height: 30px; text-align: center; word-wrap: break-word; overflow-wrap: break-word; padding-top: 30px;">
+              <div> <b>For crypto enthusiasts,</b> take a look at <a style="color: #214FDA; text-decoration: none;" href="https://robonomics.network/xrt/" target="_blank"> https://robonomics.network/xrt/  </a></div>
             </td>
           </tr>
           <tr>
@@ -126,7 +129,7 @@
             </td>
           </tr>
           <tr>
-            <td class="description text-line" align="center" bgcolor="#FFFFFF" style="border-collapse: collapse; font-size: 16px; font-weight: 500; line-height: 28px; text-align: center; word-wrap: break-word; overflow-wrap: break-word; padding-top: 30px;">
+            <td class="description text-line" align="center" bgcolor="#FFFFFF" style="border-collapse: collapse; font-size: 16px; font-weight: 400; line-height: 30px; text-align: center; word-wrap: break-word; overflow-wrap: break-word; padding-top: 30px;">
               <h3 class="title" style="font-size: 20px; line-height: 1.3; margin: 10px 0; text-align: center;">For joy & entertainment,</h3>
               <div> NFT collections <a style="color: #214FDA; text-decoration: none;" href="https://robonomics.network/nft/" target="_blank"> https://robonomics.network/nft/</a>;</div>
               <div> robo art merch <a style="color: #214FDA; text-decoration: none;" href="https://robonomics.network/shop/" target="_blank"> https://robonomics.network/shop/</a>;</div>
@@ -142,7 +145,7 @@
             </td>
           </tr>
           <tr>
-            <td class="description text-line" align="center" bgcolor="#FFFFFF" style="border-collapse: collapse; font-size: 16px; font-weight: 500; line-height: 28px; text-align: center; word-wrap: break-word; overflow-wrap: break-word; padding-top: 30px;">
+            <td class="description text-line" align="center" bgcolor="#FFFFFF" style="border-collapse: collapse; font-size: 16px; font-weight: 400; line-height: 30px; text-align: center; word-wrap: break-word; overflow-wrap: break-word; padding-top: 30px;">
               <h3 class="title" style="font-size: 20px; line-height: 1.3; margin: 10px 0; text-align: center;">Be in touch:</h3>
               <div> Twitter (X) <a style="color: #214FDA; text-decoration: none;" href="https://twitter.com/AIRA_Robonomics" target="_blank">  https://twitter.com/AIRA_Robonomics</a>;</div>
               <div> Discord <a style="color: #214FDA; text-decoration: none;" href="https://discord.gg/JpaN2XAmqY" target="_blank"> https://discord.gg/JpaN2XAmqY</a>;</div>
